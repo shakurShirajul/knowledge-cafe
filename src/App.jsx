@@ -1,16 +1,21 @@
 // import { useState } from 'react'
 
 import './App.css'
-import Header from './components/header'
-import Blogs from './components/blogs'
+import Header from './components/Header/Header'
+import Blogs from './components/Blogs/Blogs'
+import Bookmarks from './components/Bookmarks/Bookmarks'
+
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <Header/>
-      <Blogs></Blogs>
+      <Header />
+      <main className='md:flex container mx-auto'>
+        <Blogs/>
+        <Bookmarks/>
+      </main>
     </>
   )
 }
